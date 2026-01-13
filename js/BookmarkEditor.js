@@ -26,11 +26,11 @@ export class BookmarkEditor {
     inputElement.select();
 
     // 创建保存和取消按钮
-    const saveBtn = createButton('保存', 'btn-save', () => {
+    const saveBtn = createButton(CONFIG.BUTTONS.SAVE, 'btn-save', () => {
       this.saveBookmark(bookmarkId, inputElement.value, titleElement, inputElement, editBtn, saveBtn, cancelBtn, actionsContainer);
     });
 
-    const cancelBtn = createButton('取消', 'btn-cancel', () => {
+    const cancelBtn = createButton(CONFIG.BUTTONS.CANCEL, 'btn-cancel', () => {
       this.cancelEdit(bookmarkId, titleElement, inputElement, editBtn, saveBtn, cancelBtn, actionsContainer);
     });
 
@@ -123,7 +123,7 @@ export class BookmarkEditor {
    * @param {HTMLElement} actionsContainer - 操作按钮容器
    */
   restoreActionButtons(bookmarkId, editBtn, actionsContainer) {
-    const deleteBtn = createButton('删除', 'btn-delete', () => {
+    const deleteBtn = createButton(CONFIG.BUTTONS.DELETE, 'btn-delete', () => {
       this.deleteBookmark(bookmarkId);
     });
 

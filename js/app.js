@@ -6,7 +6,6 @@ import { BookmarkRenderer } from './BookmarkRenderer.js';
 import { BookmarkEditor } from './BookmarkEditor.js';
 import { SearchEngine } from './SearchEngine.js';
 import { debounce } from './utils.js';
-import { CONFIG } from './config.js';
 
 export class BookmarkSearchApp {
   constructor() {

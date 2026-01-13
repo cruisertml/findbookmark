@@ -24,5 +24,13 @@ export const CONFIG = {
   DEFAULT_PATH: '书签栏',
   
   // 路径分隔符
-  PATH_SEPARATOR: ' / '
+  PATH_SEPARATOR: ' / ',
+  
+  // 按钮文本
+  BUTTONS: {
+    EDIT: '编辑',
+    SAVE: '保存',
+    CANCEL: '取消',
+    DELETE: '删除'
+  }
 };

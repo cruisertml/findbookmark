@@ -136,11 +136,11 @@ export class BookmarkRenderer {
     const actions = document.createElement('div');
     actions.className = 'bookmark-actions';
 
-    const editBtn = createButton('编辑', 'btn-edit', () => {
+    const editBtn = createButton(CONFIG.BUTTONS.EDIT, 'btn-edit', () => {
       callbacks.onEdit(bookmark.id, title, titleInput, editBtn, actions);
     });
 
-    const deleteBtn = createButton('删除', 'btn-delete', () => {
+    const deleteBtn = createButton(CONFIG.BUTTONS.DELETE, 'btn-delete', () => {
       callbacks.onDelete(bookmark.id);
     });
 
