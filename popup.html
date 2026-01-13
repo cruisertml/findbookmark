@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>书签搜索</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🔖 书签搜索</h1>
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="输入关键词搜索书签..."
+          autocomplete="off"
+        >
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="bookmark-count" id="bookmarkCount">共 0 个书签</div>
+    </div>
+    
+    <div class="results-container">
+      <div id="loading" class="loading hidden">加载中...</div>
+      <div id="noResults" class="no-results hidden">未找到匹配的书签</div>
+      <div id="resultsList" class="results-list"></div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+

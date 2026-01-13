@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "书签搜索工具",
+  "version": "1.0.0",
+  "description": "快速搜索所有书签，支持模糊匹配，并可编辑和删除书签",
+  "permissions": [
+    "bookmarks"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
+
