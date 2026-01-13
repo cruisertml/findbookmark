@@ -32,5 +32,12 @@ export const CONFIG = {
     SAVE: '保存',
     CANCEL: '取消',
     DELETE: '删除'
+  },
+  
+  // 图标路径
+  ICONS: {
+    BOOKMARK: 'icons/bookmark.svg',
+    FOLDER: 'icons/folder.svg',
+    SEARCH: 'icons/search.svg'
   }
 };

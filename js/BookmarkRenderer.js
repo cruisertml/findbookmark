@@ -117,9 +117,10 @@ export class BookmarkRenderer {
     header.className = 'bookmark-header';
 
     // 图标
-    const icon = document.createElement('span');
+    const icon = document.createElement('img');
     icon.className = 'bookmark-icon';
-    icon.textContent = '🔖';
+    icon.src = CONFIG.ICONS.BOOKMARK;
+    icon.alt = '书签';
 
     // 标题
     const title = document.createElement('span');
@@ -182,9 +183,10 @@ export class BookmarkRenderer {
     const location = document.createElement('div');
     location.className = 'bookmark-location';
     
-    const locationIcon = document.createElement('span');
+    const locationIcon = document.createElement('img');
     locationIcon.className = 'location-icon';
-    locationIcon.textContent = '📁';
+    locationIcon.src = CONFIG.ICONS.FOLDER;
+    locationIcon.alt = '文件夹';
     
     const locationText = document.createElement('span');
     locationText.textContent = bookmark.path || CONFIG.DEFAULT_PATH;
